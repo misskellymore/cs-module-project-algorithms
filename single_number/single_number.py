@@ -8,6 +8,7 @@ def single_number(arr):
     # The outer loop picks elements one by one and 
     # inner loop checks if the element is present 
     # more than once or not.
+    # Resource: https://www.geeksforgeeks.org/non-repeating-element/
 
 
     # picks elems 1 by 1
