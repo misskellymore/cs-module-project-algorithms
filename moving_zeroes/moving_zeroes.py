@@ -22,12 +22,20 @@ def moving_zeroes(arr):
     count = 0
     n = len(arr)
 
+    # If element  
+    # encountered is not 0, then 
+    # replace the element at index 
+    # 'count' with this element 
     for i in range(n):
         if arr[i] != 0:
 
             arr[count] = arr[i]
             count+=1
 
+    # Now all non-zero elements have been 
+    # shifted to front and 'count' is set 
+    # as index of first 0 elem/value. Make all  
+    # elements/value 0 from count to end. 
     while count < n:
         arr[count] = 0
         count+=1
